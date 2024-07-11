@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <style>
+            #logbutton{
+                width: 200px;
+                height: 30px;
+                border: none;
+                border-radius: 5px;
+                color: white;
+                background-color: orangered;
+                
+            
+            }
+            input{
+                font-weight: bolder;
+            }
+            body{
+                padding: 40px;
+                background: url(logbgved.jpg);
+                background-repeat: no-repeat;
+                background-size: 1300px 610px;
+            }
+        </style>
+        <script>
+            function myFunction()
+            {
+            var un=document.forms["login"]["username"].value;
+            var pass=document.forms["login"]["password"].value;
+            if(un=="saranya" && pass=="saranya@2003")
+            {
+                window.location.href="vedantu.html";
+            }
+            else{
+                alert("Invalid Username or Password");
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <form name="login" id="login">
+            <center>
+           <h1>Hey Buddy <img src="smile.png" style="width: 25px;"></h1>
+            <h2>Please LOGIN </h2>
+            <b>Username:</b>
+            <input type="text" name="username" id="username"><br><br>
+            <b>Password:</b>
+            <input type="text" name="password" id="password"><br><br></center>
+            <center><input type="button" id="logbutton" value="Login" onclick="myFunction()"></center>
+        </form>
+    </body>
+</html>
